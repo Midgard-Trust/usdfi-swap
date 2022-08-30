@@ -96,13 +96,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        
         <SalesSection {...swapSectionData(t)} />
-        <br></br><br></br><br></br><br></br><br></br>
-        <SalesSection {...earnSectionData(t)} />
-        <br></br><br></br><br></br><br></br><br></br>
-        
-        
       </PageSection>
       
       {/* <PageSection
