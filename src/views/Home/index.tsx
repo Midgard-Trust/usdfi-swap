@@ -54,7 +54,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
 
   return (
     <>
-      <PageMeta />
+      {/* <PageMeta /> */}
       {/* <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background={
@@ -87,13 +87,24 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       </PageSection> */}
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
-        background={theme.colors.background}
+        // background={theme.colors.background}
+        background={
+          theme.isDark
+            ? 'linear-gradient(180deg, #0B4576 0%, #091115 100%)'
+            : 'linear-gradient(180deg, #6FB6F1 0%, #EAF2F6 100%)'
+        }
         index={2}
         hasCurvedDivider={false}
       >
         
         <SalesSection {...swapSectionData(t)} />
+        <br></br><br></br><br></br><br></br><br></br>
+        <SalesSection {...earnSectionData(t)} />
+        <br></br><br></br><br></br><br></br><br></br>
+        
+        
       </PageSection>
+      
       {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradients.cardHeader}

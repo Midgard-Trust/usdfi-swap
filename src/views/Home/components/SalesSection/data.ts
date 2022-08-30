@@ -6,12 +6,12 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
   bodyText: t('Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.'),
   reverse: false,
   primaryButton: {
-    to: '/swap',
+    to: '/swap?chainId=56&outputCurrency=0xE7Df6907120684add86f686E103282Ee5CD17b02',
     text: t('Trade Now'),
     external: false,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/',
+    to: 'https://docs.usdfi.com/usdfi-working-paper-v2/abstract',
     text: t('Learn'),
     external: true,
   },
@@ -26,24 +26,22 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
 
 export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
   headingText: t('Earn passive income with crypto.'),
-  bodyText: t('PancakeSwap makes it easy to make your crypto work for you.'),
+  bodyText: t('USDFI makes it easy to make your crypto work for you.'),
   reverse: true,
   primaryButton: {
-    to: '/farms',
+    to: 'https://app.usdfi.com/stake',
     text: t('Explore'),
-    external: false,
+    external: true,
   },
   secondaryButton: {
-    to: 'https://docs.pancakeswap.finance/products/yield-farming',
+    to: 'https://docs.usdfi.com/usdfi-working-paper-v2/abstract',
     text: t('Learn'),
     external: true,
   },
   images: {
     path: '/images/home/earn/',
     attributes: [
-      { src: 'pie', alt: t('Pie chart') },
-      { src: 'stonks', alt: t('Stocks chart') },
-      { src: 'folder', alt: t('Folder with cake token') },
+      { src: 'stable_logo_icon', alt: t('STABLE') },
     ],
   },
 })
