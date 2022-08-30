@@ -150,6 +150,22 @@ export const bscTokens = {
   ),
   cake: CAKE_MAINNET,
   gmi: new Token(ChainId.BSC, '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846', 18, 'GMI', 'Gamifi', 'https://gamifi.gg/'),
+  stable: new Token(
+    ChainId.BSC,
+    '0xE7Df6907120684add86f686E103282Ee5CD17b02',
+    18,
+    'STABLE',
+    'STABLE',
+    'https://usdfi.com',
+  ),
+  usdfi: new Token(
+    ChainId.BSC,
+    '0x7DF1938170869AFE410098540c051A8A50308988',
+    18,
+    'USDFI',
+    'USDFI',
+    'https://usdfi.com',
+  ),
   tlos: new Token(
     ChainId.BSC,
     '0xb6C53431608E626AC81a9776ac3e999c5556717c',
