@@ -46,27 +46,27 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: '/swap',
         showItemsOnMobile: false,
         items: [
-          {
-            label: t('Swap'),
-            href: '/swap',
-          },
-          {
-            label: t('Limit'),
-            href: '/limit-orders',
-            supportChainIds: [ChainId.BSC],
-            image: '/images/decorations/3d-coin.png',
-          },
-          {
-            label: t('Liquidity'),
-            href: '/liquidity',
-          },
-          {
-            label: t('Perpetual'),
-            href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
-              isDark,
-            )}`,
-            type: DropdownMenuItemType.EXTERNAL_LINK,
-          },
+          // {
+          //   label: t('Swap'),
+          //   href: '/swap',
+          // },
+          // {
+          //   label: t('Limit'),
+          //   href: '/limit-orders',
+          //   supportChainIds: [ChainId.BSC],
+          //   image: '/images/decorations/3d-coin.png',
+          // },
+          // {
+          //   label: t('Liquidity'),
+          //   href: '/liquidity',
+          // },
+          // {
+          //   label: t('Perpetual'),
+          //   href: `https://perp.pancakeswap.finance/${perpLangMap(languageCode)}/futures/BTCUSDT?theme=${perpTheme(
+          //     isDark,
+          //   )}`,
+          //   type: DropdownMenuItemType.EXTERNAL_LINK,
+          // },
           // {
           //   label: t('Transfer'),
           //   href: '/transfer',
@@ -74,73 +74,66 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
       {
-        label: t('Earn'),
-        href: '/farms',
+        label: t('Liquidity'),
+        href: '/liquidity',
         icon: EarnIcon,
         fillIcon: EarnFillIcon,
         supportChainIds: [ChainId.BSC],
         image: '/images/decorations/pe2.png',
         items: [
-          {
-            label: t('Farms'),
-            href: '/farms',
-          },
-          {
-            label: t('Pools'),
-            href: '/pools',
-          },
+          // {
+          //   label: t('Farms'),
+          //   href: '/farms',
+          // },
+          // {
+          //   label: t('Pools'),
+          //   href: '/pools',
+          // },
         ],
       },
       {
-        label: t('Win'),
-        href: '/prediction',
+        label: t('Stake'),
+        href: 'https://app.usdfi.com/stake',
         icon: TrophyIcon,
         fillIcon: TrophyFillIcon,
         supportChainIds: [ChainId.BSC],
         items: [
-          {
-            label: t('Trading Competition'),
-            href: '/competition',
-            image: '/images/decorations/tc.png',
-            hideSubNav: true,
-          },
-          {
-            label: t('Prediction (BETA)'),
-            href: '/prediction',
-            image: '/images/decorations/prediction.png',
-          },
-          {
-            label: t('Lottery'),
-            href: '/lottery',
-            image: '/images/decorations/lottery.png',
-          },
-          {
-            label: t('Pottery (BETA)'),
-            href: '/pottery',
-            image: '/images/decorations/lottery.png',
-          },
         ],
       },
       {
-        label: t('NFT'),
-        href: `${nftsBaseUrl}`,
-        icon: NftIcon,
-        fillIcon: NftFillIcon,
+        label: t('Mint'),
+        href: 'https://app.usdfi.com/mint',
+        icon: TrophyIcon,
+        fillIcon: TrophyFillIcon,
         supportChainIds: [ChainId.BSC],
-        image: '/images/decorations/nft.png',
         items: [
-          {
-            label: t('Overview'),
-            href: `${nftsBaseUrl}`,
-          },
-          {
-            label: t('Collections'),
-            href: `${nftsBaseUrl}/collections`,
-          },
-          {
-            label: t('Activity'),
-            href: `${nftsBaseUrl}/activity`,
-          },
+        ],
+      },
+      {
+        label: t('Stability Vaults'),
+        href: '#',
+        icon: TrophyIcon,
+        fillIcon: TrophyFillIcon,
+        supportChainIds: [ChainId.BSC],
+        items: [
+        ],
+      },
+      {
+        label: t('Treasury'),
+        href: 'https://dashboard.usdfi.com/',
+        icon: TrophyIcon,
+        fillIcon: TrophyFillIcon,
+        supportChainIds: [ChainId.BSC],
+        items: [
+        ],
+      },
+      {
+        label: t('Affiliate'),
+        href: 'https://app.usdfi.com/affiliate',
+        icon: TrophyIcon,
+        fillIcon: TrophyFillIcon,
+        supportChainIds: [ChainId.BSC],
+        items: [
         ],
       },
       {
@@ -149,45 +142,45 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         icon: MoreIcon,
         hideSubNav: true,
         items: [
-          {
-            label: t('Info'),
-            href: '/info',
-            supportChainIds: [ChainId.BSC],
-          },
-          {
-            label: t('IFO'),
-            href: '/ifo',
-            supportChainIds: [ChainId.BSC],
-            image: '/images/ifos/ifo-bunny.png',
-          },
-          {
-            label: t('Voting'),
-            href: '/voting',
-            supportChainIds: [ChainId.BSC],
-            image: '/images/voting/voting-bunny.png',
-          },
-          {
-            type: DropdownMenuItemType.DIVIDER,
-          },
-          {
-            label: t('Leaderboard'),
-            href: '/teams',
-            supportChainIds: [ChainId.BSC],
-            image: '/images/decorations/leaderboard.png',
-          },
-          {
-            type: DropdownMenuItemType.DIVIDER,
-          },
-          {
-            label: t('Blog'),
-            href: 'https://medium.com/pancakeswap',
-            type: DropdownMenuItemType.EXTERNAL_LINK,
-          },
-          {
-            label: t('Docs'),
-            href: 'https://docs.pancakeswap.finance',
-            type: DropdownMenuItemType.EXTERNAL_LINK,
-          },
+          // {
+          //   label: t('Info'),
+          //   href: '/info',
+          //   supportChainIds: [ChainId.BSC],
+          // },
+          // {
+          //   label: t('IFO'),
+          //   href: '/ifo',
+          //   supportChainIds: [ChainId.BSC],
+          //   image: '/images/ifos/ifo-bunny.png',
+          // },
+          // {
+          //   label: t('Voting'),
+          //   href: '/voting',
+          //   supportChainIds: [ChainId.BSC],
+          //   image: '/images/voting/voting-bunny.png',
+          // },
+          // {
+          //   type: DropdownMenuItemType.DIVIDER,
+          // },
+          // {
+          //   label: t('Leaderboard'),
+          //   href: '/teams',
+          //   supportChainIds: [ChainId.BSC],
+          //   image: '/images/decorations/leaderboard.png',
+          // },
+          // {
+          //   type: DropdownMenuItemType.DIVIDER,
+          // },
+          // {
+          //   label: t('Blog'),
+          //   href: 'https://medium.com/pancakeswap',
+          //   type: DropdownMenuItemType.EXTERNAL_LINK,
+          // },
+          // {
+          //   label: t('Docs'),
+          //   href: 'https://docs.pancakeswap.finance',
+          //   type: DropdownMenuItemType.EXTERNAL_LINK,
+          // },
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
     ].map((item) => addMenuItemSupported(item, chainId))

@@ -22,7 +22,7 @@ const Menu = (props) => {
   const cakePriceUsd = usePriceCakeBusd()
   const { currentLanguage, setLanguage, t } = useTranslation()
   const { pathname } = useRouter()
-  const [showPhishingWarningBanner] = usePhishingBannerManager()
+  // const [showPhishingWarningBanner] = usePhishingBannerManager()
   const { chain } = useActiveWeb3React()
 
   const menuItems = useMenuItems()
@@ -51,7 +51,7 @@ const Menu = (props) => {
             <UserMenu />
           </>
         }
-        banner={showPhishingWarningBanner && typeof window !== 'undefined' && <PhishingWarningBanner />}
+        // banner={showPhishingWarningBanner && typeof window !== 'undefined' && <PhishingWarningBanner />}
         isDark={isDark}
         toggleTheme={toggleTheme}
         currentLang={currentLanguage.code}
