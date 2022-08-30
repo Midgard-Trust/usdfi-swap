@@ -40,7 +40,7 @@ type FooterVariant = 'default' | 'side'
 
 const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUrl?: string }>> = ({
   variant = 'default',
-  helpUrl = EXCHANGE_DOCS_URLS,
+  helpUrl = "https://docs.usdfi.com/usdfi-working-paper-v2/abstract",
 }) => {
   const { t } = useTranslation()
   const isSide = variant === 'side'
@@ -71,7 +71,7 @@ const Footer: React.FC<React.PropsWithChildren<{ variant?: FooterVariant; helpUr
         justifyContent={['center', 'center', 'center', 'flex-end']}
       >
         <BubbleWrapper>
-          <Button id="clickExchangeHelp" as="a" external href={helpUrl} variant="subtle">
+          <Button id="clickExchangeHelp" as="a" external href="https://docs.usdfi.com/usdfi-working-paper-v2/abstract" variant="subtle">
             {t('Need help ?')}
           </Button>
           <Svg viewBox="0 0 16 16">

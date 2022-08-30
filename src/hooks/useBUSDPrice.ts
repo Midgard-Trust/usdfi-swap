@@ -79,7 +79,7 @@ export default function useBUSDPrice(currency?: Currency): Price<Currency, Curre
 
 export const useCakeBusdPrice = (): Price<Currency, Currency> | undefined => {
   const { chainId } = useActiveWeb3React()
-  const cakeBusdPrice = useBUSDPrice(bscTokens.usdfi[chainId])
+  const cakeBusdPrice = useBUSDPrice(bscTokens.stable[chainId])
   return cakeBusdPrice
 }
 
