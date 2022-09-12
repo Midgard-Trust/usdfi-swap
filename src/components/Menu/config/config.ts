@@ -2,13 +2,16 @@ import {
   MenuItemsType,
   DropdownMenuItemType,
   SwapIcon,
-  SwapFillIcon,
-  EarnFillIcon,
-  EarnIcon,
-  TrophyIcon,
-  TrophyFillIcon,
-  NftIcon,
-  NftFillIcon,
+  BackForwardIcon,
+  ChartIcon,
+  LineGraphIcon,
+  IfoIcon,
+  TradeIcon,
+  TokenPocketIcon,
+  ArrowForwardIcon,
+  SellIcon,
+  VerifiedIcon,
+  Cards,
   MoreIcon,
 } from '@pancakeswap/uikit'
 import { ContextApi } from '@pancakeswap/localization'
@@ -40,9 +43,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
   (t, isDark, languageCode, chainId) =>
     [
       {
-        label: t('Trade'),
-        icon: SwapIcon,
-        fillIcon: SwapFillIcon,
+        label: t('Swap'),
+        //icon: BackForwardIcon,
+        //fillIcon: BackForwardIcon,
         href: '/swap',
         showItemsOnMobile: false,
         items: [
@@ -76,9 +79,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Liquidity'),
         href: '/liquidity',
-        // icon: EarnIcon,
-        // fillIcon: EarnFillIcon,
-        // hideSubNav: true,
+        //icon: TradeIcon,
+        //fillIcon: TradeIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         showItemsOnMobile: false,
         // image: '/images/decorations/pe2.png',
@@ -97,9 +100,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         label: t('Stake'),
         href: 'https://app.usdfi.com/stake',
         showItemsOnMobile: false,
-        // icon: TrophyIcon,
-        // fillIcon: TrophyFillIcon,
-        // hideSubNav: true,
+        //icon: VerifiedIcon,
+        //fillIcon: VerifiedIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -108,9 +111,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         label: t('Mint'),
         href: 'https://app.usdfi.com/mint',
         showItemsOnMobile: false,
-        // icon: TrophyIcon,
-        // fillIcon: TrophyFillIcon,
-        // hideSubNav: true,
+        //icon: ArrowForwardIcon,
+        //fillIcon: ArrowForwardIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -119,19 +122,19 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         label: t('Stability Vaults'),
         href: '#',
         showItemsOnMobile: false,
-        // icon: TrophyIcon,
-        // fillIcon: TrophyFillIcon,
-        // hideSubNav: true,
+        //icon: Cards,
+        //fillIcon: Cards,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
       },
-      {
+      /*{
         label: t('Treasury'),
         href: 'https://dashboard.usdfi.com/',
         showItemsOnMobile: false,
-        // icon: TrophyIcon,
-        // fillIcon: TrophyFillIcon,
+        //icon: ChartIcon,
+        //fillIcon: ChartIcon,
         // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
@@ -141,59 +144,36 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         label: t('Affiliate'),
         href: 'https://app.usdfi.com/affiliate',
         showItemsOnMobile: false,
-        // icon: TrophyIcon,
-        // fillIcon: TrophyFillIcon,
+        //icon: SellIcon,
+        //fillIcon: SellIcon,
         // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
-      },
+      },*/
       {
         label: '',
-        href: '/info',
+        href: '#',
         icon: MoreIcon,
-        hideSubNav: true,
-        showItemsOnMobile: false,
+        hideSubNav: false,
+        showItemsOnMobile: true,
         items: [
-          // {
-          //   label: t('Info'),
-          //   href: '/info',
-          //   supportChainIds: [ChainId.BSC],
-          // },
-          // {
-          //   label: t('IFO'),
-          //   href: '/ifo',
-          //   supportChainIds: [ChainId.BSC],
-          //   image: '/images/ifos/ifo-bunny.png',
-          // },
-          // {
-          //   label: t('Voting'),
-          //   href: '/voting',
-          //   supportChainIds: [ChainId.BSC],
-          //   image: '/images/voting/voting-bunny.png',
-          // },
-          // {
-          //   type: DropdownMenuItemType.DIVIDER,
-          // },
-          // {
-          //   label: t('Leaderboard'),
-          //   href: '/teams',
-          //   supportChainIds: [ChainId.BSC],
-          //   image: '/images/decorations/leaderboard.png',
-          // },
-          // {
-          //   type: DropdownMenuItemType.DIVIDER,
-          // },
-          // {
-          //   label: t('Blog'),
-          //   href: 'https://medium.com/pancakeswap',
-          //   type: DropdownMenuItemType.EXTERNAL_LINK,
-          // },
-          // {
-          //   label: t('Docs'),
-          //   href: 'https://docs.pancakeswap.finance',
-          //   type: DropdownMenuItemType.EXTERNAL_LINK,
-          // },
+          {
+             label: t('Treasury'),
+             href: 'https://dashboard.usdfi.com/',
+             supportChainIds: [ChainId.BSC],
+           },
+           {
+             label: t('Affiliate'),
+             href: 'https://app.usdfi.com/affiliate',
+             supportChainIds: [ChainId.BSC],
+          },
+          {
+            label: t('Info'),
+            href: '/info',
+            supportChainIds: [ChainId.BSC],
+         },
+         
         ].map((item) => addMenuItemSupported(item, chainId)),
       },
     ].map((item) => addMenuItemSupported(item, chainId))
