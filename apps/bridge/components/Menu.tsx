@@ -81,7 +81,7 @@ export function Menu() {
               <StyledMenuItem $isActive>Bridge</StyledMenuItem>
             </NextLink>
           </Box>
-          <StyledMenuItem href="https://app.usdfi.com">Swap</StyledMenuItem>
+          <StyledMenuItem href="/swap">Swap</StyledMenuItem>
         </Flex>
       </Flex>
       <Flex alignItems="center">

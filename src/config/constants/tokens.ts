@@ -2,11 +2,11 @@ import { ChainId, Token, WBNB } from '@pancakeswap/sdk'
 
 const CAKE_MAINNET = new Token(
   ChainId.BSC,
-  '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+  '0xE7Df6907120684add86f686E103282Ee5CD17b02',
   18,
-  'CAKE',
-  'PancakeSwap Token',
-  'https://pancakeswap.finance/',
+  'STABLE',
+  'STABLE',
+  'https://usdfi.com',
 )
 
 const CAKE_TESTNET = new Token(
