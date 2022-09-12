@@ -24,10 +24,9 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;
-
-  color: ${({ theme, $isActive }) => ($isActive ? theme.colors.secondary : theme.colors.textSubtle)};
+  color: ${({ theme, $isActive }) => ($isActive ? "#3bfc14" : theme.colors.textSubtle)};
   font-size: 16px;
-  font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
+  font-weight: ${({ $isActive }) => ($isActive ? "600" : "600")};
   opacity: ${({ $isDisabled }) => ($isDisabled ? 0.5 : 1)};
 
   ${({ $statusColor, theme }) =>
@@ -36,7 +35,6 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
     &:after {
       content: "";
       border-radius: 100%;
-      background: ${theme.colors[$statusColor]};
       height: 8px;
       width: 8px;
       margin-left: 12px;
@@ -55,8 +53,8 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   `}
 
   &:hover {
-    background: ${({ theme }) => theme.colors.tertiary};
-    ${({ $variant }) => $variant === "default" && "border-radius: 16px;"};
+    background: transparent;
+    color: #3bfc14;
   }
 `;
 
