@@ -80,6 +80,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         // fillIcon: EarnFillIcon,
         // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
+        showItemsOnMobile: false,
         // image: '/images/decorations/pe2.png',
         items: [
           // {
@@ -95,6 +96,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Stake'),
         href: 'https://app.usdfi.com/stake',
+        showItemsOnMobile: false,
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
         // hideSubNav: true,
@@ -105,6 +107,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Mint'),
         href: 'https://app.usdfi.com/mint',
+        showItemsOnMobile: false,
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
         // hideSubNav: true,
@@ -115,6 +118,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Stability Vaults'),
         href: '#',
+        showItemsOnMobile: false,
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
         // hideSubNav: true,
@@ -125,6 +129,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Treasury'),
         href: 'https://dashboard.usdfi.com/',
+        showItemsOnMobile: false,
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
         // hideSubNav: true,
@@ -135,6 +140,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Affiliate'),
         href: 'https://app.usdfi.com/affiliate',
+        showItemsOnMobile: false,
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
         // hideSubNav: true,
@@ -147,6 +153,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: '/info',
         icon: MoreIcon,
         hideSubNav: true,
+        showItemsOnMobile: false,
         items: [
           // {
           //   label: t('Info'),
