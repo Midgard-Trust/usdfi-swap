@@ -10,10 +10,12 @@ export const StyledBottomNavItem = styled.button`
   padding: 4px 12px;
   &:hover {
     border-radius: 5px;
+    color: #FFFFFF;
   }
   &:hover,
   &:hover div {
     background: ${({ theme }) => theme.colors.tertiary};
+    color: #FFFFFF;
   }
 `;
 
