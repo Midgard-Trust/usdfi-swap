@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Search from 'views/Info/components/InfoSearch'
 
 const NavWrapper = styled(Flex)`
-  background: transparent;
+  background: #08060B;
   justify-content: space-between;
   padding: 20px 16px;
   flex-direction: column;
