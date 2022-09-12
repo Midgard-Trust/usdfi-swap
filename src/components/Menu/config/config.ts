@@ -76,10 +76,11 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Liquidity'),
         href: '/liquidity',
-        icon: EarnIcon,
-        fillIcon: EarnFillIcon,
+        // icon: EarnIcon,
+        // fillIcon: EarnFillIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
-        image: '/images/decorations/pe2.png',
+        // image: '/images/decorations/pe2.png',
         items: [
           // {
           //   label: t('Farms'),
@@ -94,8 +95,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Stake'),
         href: 'https://app.usdfi.com/stake',
-        icon: TrophyIcon,
-        fillIcon: TrophyFillIcon,
+        // icon: TrophyIcon,
+        // fillIcon: TrophyFillIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -103,8 +105,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Mint'),
         href: 'https://app.usdfi.com/mint',
-        icon: TrophyIcon,
-        fillIcon: TrophyFillIcon,
+        // icon: TrophyIcon,
+        // fillIcon: TrophyFillIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -112,8 +115,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Stability Vaults'),
         href: '#',
-        icon: TrophyIcon,
-        fillIcon: TrophyFillIcon,
+        // icon: TrophyIcon,
+        // fillIcon: TrophyFillIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -121,8 +125,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Treasury'),
         href: 'https://dashboard.usdfi.com/',
-        icon: TrophyIcon,
-        fillIcon: TrophyFillIcon,
+        // icon: TrophyIcon,
+        // fillIcon: TrophyFillIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -130,8 +135,9 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
       {
         label: t('Affiliate'),
         href: 'https://app.usdfi.com/affiliate',
-        icon: TrophyIcon,
-        fillIcon: TrophyFillIcon,
+        // icon: TrophyIcon,
+        // fillIcon: TrophyFillIcon,
+        hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
