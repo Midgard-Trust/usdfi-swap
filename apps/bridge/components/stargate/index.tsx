@@ -19,7 +19,7 @@ export const StargateWidget = ({ theme }: { theme: PancakeTheme }) => {
           background-color: transparent !important;
         }
         .StgHeader {
-          border-bottom: 1px solid ${theme.colors.cardBorder} !important;
+          border-bottom: 0px solid ${theme.colors.cardBorder} !important;
         }
         .StgHeader .MuiTypography-subtitle1 {
           font-family: ${FontFamily.KANIT};
