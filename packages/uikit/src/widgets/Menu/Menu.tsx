@@ -29,7 +29,6 @@ const StyledNav = styled.nav`
   background-color: transparent;
   border-bottom: 0px solid ${({ theme }) => theme.colors.cardBorder};
   transform: translate3d(0, 0, 0);
-
   padding-left: 16px;
   padding-right: 16px;
 `;
