@@ -34,7 +34,6 @@ const StyledMenuItem = styled.a<any>`
   color: ${({ theme, $isActive }) => ($isActive ? theme.colors.secondary : theme.colors.textSubtle)};
   font-size: 16px;
   font-weight: ${({ $isActive }) => ($isActive ? '600' : '400')};
-
   padding: 0 16px;
   height: 48px;
 
