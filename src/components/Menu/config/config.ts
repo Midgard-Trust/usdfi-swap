@@ -78,7 +78,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: '/liquidity',
         // icon: EarnIcon,
         // fillIcon: EarnFillIcon,
-        hideSubNav: true,
+        // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         // image: '/images/decorations/pe2.png',
         items: [
@@ -97,7 +97,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: 'https://app.usdfi.com/stake',
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
-        hideSubNav: true,
+        // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -107,7 +107,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: 'https://app.usdfi.com/mint',
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
-        hideSubNav: true,
+        // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -117,7 +117,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: '#',
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
-        hideSubNav: true,
+        // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -127,7 +127,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: 'https://dashboard.usdfi.com/',
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
-        hideSubNav: true,
+        // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
@@ -137,7 +137,7 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         href: 'https://app.usdfi.com/affiliate',
         // icon: TrophyIcon,
         // fillIcon: TrophyFillIcon,
-        hideSubNav: true,
+        // hideSubNav: true,
         supportChainIds: [ChainId.BSC],
         items: [
         ],
