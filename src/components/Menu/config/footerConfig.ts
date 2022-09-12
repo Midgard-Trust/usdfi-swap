@@ -3,77 +3,73 @@ import { ContextApi } from '@pancakeswap/localization'
 
 export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   {
-    label: t('About'),
+    label: t(''),
     items: [
       {
-        label: t('Contact'),
-        href: 'https://docs.pancakeswap.finance/contact-us',
-        isHighlighted: true,
+        label: t('Mint'),
+        href: 'https://app.usdfi.com/mint',
+        // isHighlighted: true,
       },
       {
-        label: t('Brand'),
-        href: 'https://docs.pancakeswap.finance/brand',
+        label: t('Swap'),
+        href: '/swap',
       },
       {
-        label: t('Blog'),
-        href: 'https://medium.com/pancakeswap',
+        label: t('Liquidity'),
+        href: '/liquidity',
       },
       {
-        label: t('Community'),
-        href: 'https://docs.pancakeswap.finance/contact-us/telegram',
+        label: t('Stake'),
+        href: 'https://app.usdfi.com/stake',
       },
       {
-        label: t('Litepaper'),
-        href: 'https://v2litepaper.pancakeswap.finance/',
+        label: t('Stability Vaults'),
+        href: '#',
       },
       {
         label: '—',
       },
       {
-        label: t('Online Store'),
-        href: 'https://pancakeswap.creator-spring.com/',
+        label: t('Affiliate'),
+        href: 'https://app.usdfi.com/affiliate',
       },
     ],
   },
   {
-    label: t('Help'),
+    label: t(''),
     items: [
       {
-        label: t('Customer Support'),
-        href: 'https://docs.pancakeswap.finance/contact-us/customer-support',
+        label: t('Treasury'),
+        href: 'https://dashboard.usdfi.com/',
       },
       {
-        label: t('Troubleshooting'),
-        href: 'https://docs.pancakeswap.finance/help/troubleshooting',
+        label: t('Certik Audit'),
+        href: 'https://www.certik.com/projects/usdfi',
       },
       {
-        label: t('Guides'),
-        href: 'https://docs.pancakeswap.finance/get-started',
+        label: t('Docs'),
+        href: 'https://docs.usdfi.com/usdfi-working-paper-v2/abstract',
       },
     ],
   },
   {
-    label: t('Developers'),
+    label: t(''),
     items: [
       {
-        label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        label: 'Terms Of Service',
+        href: 'https://usdfi.com/documents/USDFI-Terms-of-Service.pdf',
       },
       {
-        label: t('Documentation'),
-        href: 'https://docs.pancakeswap.finance',
+        label: t('Cookies Policy'),
+        href: 'https://usdfi.com/documents/USDFI-Cookies-Policy.pdf',
       },
       {
-        label: t('Bug Bounty'),
-        href: 'https://docs.pancakeswap.finance/code/bug-bounty',
+        label: t('Privacy Policy'),
+        href: 'https://usdfi.com/documents/USDFI-Privacy-Policy.pdf',
       },
       {
-        label: t('Audits'),
-        href: 'https://docs.pancakeswap.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
-      },
-      {
-        label: t('Careers'),
-        href: 'https://docs.pancakeswap.finance/hiring/become-a-chef',
+        label: t('Risk Disclaimer'),
+        href: 'https://usdfi.com/documents/USDFI-risk-disclaimer.pdf',
       },
     ],
   },
