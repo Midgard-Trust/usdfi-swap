@@ -18,10 +18,6 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
   return disabled ? "not-allowed" : "cursor";
 };
 
-const bunnyHeadMax = ``;
-const bunnyHeadMain = ``;
-const bunnyButt = ``;
-
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
   background-color: #3bfc14;
