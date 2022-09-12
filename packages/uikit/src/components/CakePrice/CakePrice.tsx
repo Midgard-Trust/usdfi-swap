@@ -14,8 +14,12 @@ export interface Props {
 const PriceLink = styled.a`
   display: flex;
   align-items: center;
+  img{
+    margin-right: 5px;
+  }
   svg {
     transition: transform 0.3s;
+    
   }
   :hover {
     svg {
