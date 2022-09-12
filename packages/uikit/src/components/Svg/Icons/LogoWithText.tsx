@@ -8,7 +8,7 @@ interface LogoProps extends SvgProps {
 
 const Logo: React.FC<React.PropsWithChildren<LogoProps>> = ({ isDark, ...props }) => {
   const textColor = isDark ? "#FFFFFF" : "#000000";
-  return <img {...props} width="24px" height="24px" src="/images/tokens/usdfi_logo_white.png" />;
+  return <img {...props} width="100px" height="50px" src="/images/tokens/usdfi_logo_white.png" />;
 };
 
 export default React.memo(Logo, (prev, next) => prev.isDark === next.isDark);
