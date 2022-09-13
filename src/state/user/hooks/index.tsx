@@ -87,7 +87,7 @@ export function useExchangeChartManager(isMobile: boolean): [boolean, (isDisplay
 
   const setUserChartPreference = useCallback(
     (isDisplayed: boolean) => {
-      dispatch(setIsExchangeChartDisplayed(isDisplayed))
+      dispatch(setIsExchangeChartDisplayed(false))
     },
     [dispatch],
   )

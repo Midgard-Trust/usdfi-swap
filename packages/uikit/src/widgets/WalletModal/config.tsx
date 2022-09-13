@@ -19,7 +19,8 @@ const connectors: Config[] = [
     icon: Metamask,
     connectorId: ConnectorNames.MetaMask,
     priority: 1,
-    href: "https://metamask.app.link/dapp/pancakeswap.finance/",
+    href: "https://metamask.app.link/dapp/exchange.usdfi.com/",
+    // href: "https://exchange.usdfi.com",
   },
   {
     title: "Binance Wallet",
@@ -38,7 +39,7 @@ const connectors: Config[] = [
     icon: TrustWallet,
     connectorId: ConnectorNames.Injected,
     priority: 4,
-    href: "https://link.trustwallet.com/open_url?coin_id=20000714&url=https://pancakeswap.finance/",
+    href: "https://link.trustwallet.com/open_url?coin_id=20000714&url=https://exchange.usdfi.com/",
   },
   {
     title: "WalletConnect",
