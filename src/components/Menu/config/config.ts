@@ -78,8 +78,8 @@ const config: (t: ContextApi['t'], isDark: boolean, languageCode?: string, chain
         ],
       },
       {
-        label: t('Stability Vaults'),
-        href: '#',
+        label: t('Lend/Borrow'),
+        href: 'https://lending.usdfi.com',
         showItemsOnMobile: false,
         hideSubNav: true,
         supportChainIds: [ChainId.BSC],

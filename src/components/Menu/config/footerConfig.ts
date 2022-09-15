@@ -23,8 +23,8 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://app.usdfi.com/stake',
       },
       {
-        label: t('Stability Vaults'),
-        href: '#',
+        label: t('Lend/Borrow'),
+        href: 'https://lending.usdfi.com/',
       },
       {
         label: '—',
