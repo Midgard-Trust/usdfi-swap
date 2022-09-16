@@ -36,7 +36,7 @@ const ID = 'TV_SWAP_CHART'
 const SYMBOL_PREFIX = 'PANCAKESWAP:'
 
 const TradingViewChart = ({ outputSymbol, inputSymbol, isDark, onTwChartSymbol }: TradingViewChartProps) => {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
   const { t } = useTranslation()
 
   const [hasNoData, setHasNoData] = useState(false)
