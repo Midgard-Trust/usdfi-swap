@@ -75,7 +75,7 @@ export default function RemoveLiquidity() {
   const router = useRouter()
   const native = useNativeCurrency()
   const [zapMode] = useZapModeManager()
-  const [temporarilyZapMode, setTemporarilyZapMode] = useState(true)
+  const [temporarilyZapMode, setTemporarilyZapMode] = useState(false)
   const [currencyIdA, currencyIdB] = router.query.currency || []
   const [currencyA, currencyB] = [useCurrency(currencyIdA) ?? undefined, useCurrency(currencyIdB) ?? undefined]
   const { account, chainId } = useActiveWeb3React()

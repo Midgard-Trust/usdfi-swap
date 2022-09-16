@@ -86,7 +86,7 @@ export default function AddLiquidity() {
 
   const native = useNativeCurrency()
 
-  const [temporarilyZapMode, setTemporarilyZapMode] = useState(true)
+  const [temporarilyZapMode, setTemporarilyZapMode] = useState(false)
   const [currencyIdA, currencyIdB] = router.query.currency || [
     native.symbol,
     CAKE[chainId]?.address ?? USDC[chainId]?.address,
